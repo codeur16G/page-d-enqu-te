@@ -1,0 +1,47 @@
+body {
+  background-color: #42FFF2;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+
+#container {
+  background-color: rgba(107,219,212,0.5);
+  padding: 0 5% 0 5%;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+/* permettra aux champ de saisie des formulaires de nom, d'émail et de numéro de
+prendre 100% de la largeur de l'élément container, qui contient tous le formulaire
+ainsi que le titre et la description*/
+#name, #email, #number {
+  width: 100%;
+  height: 35px;
+}
+
+h1, #description {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+
+.element_du_formulaire{
+    margin-bottom: 3.5%;
+}
+
+#commentaire, #submit {
+  width: 100%;
+}
+
+#submit {
+  height: 35px;
+  background-color: green;
+}
+
+
