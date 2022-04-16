@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <title>Hello World!</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+    <meta
+      name="description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Hello World!" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+    <meta
+      property="og:description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
+    />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="décoratif">
+      
+    </div>
+    <div id="container">
+    <!--   Le titre de notre page web   -->
+    <h1 id="title">
+      Formulaire d'enquêtes
+    </h1>
+    <!--   Une petite description de la page   -->
+    <p id="description">
+      Aidez nous à nous améliorer en prenant le temps de remplir ce formulaire.
+    </p>
+    <!-- Le formulaire de ma page d'acceuille  -->
+    <form id="survey-form">
+      <!--   champ pour entrer mon nom et mon prenom avec id="name"    -->
+      <div class="element_du_formulaire">
+      <label for="name" id="name-label">Nom et prenom : </label> 
+      <input type="text" id="name" placeholder="Entrez votre nom et prenom" required /> 
+      </div>
+      
+      <!-- champ pour entrer un e-mail avec id="e-mail" -->
+      <div class="element_du_formulaire">
+      <label for="e-mail" id="email-label">E-mail : </label>
+      <input type="email" id="email" placeholder="Entrez votre e-mail" required />    
+      </div>
+      
+      <!--   champ pour insérer l'age du client     -->
+      <div class="element_du_formulaire">
+      <label for="Age" id="number-label">Age (optionel)</label>
+      <input type="number" id="number" min="1" max="100" placeholder="Age"/>
+      </div>
+      
+      <!--   Ménu déroulant  afin de sélectionner le statut du client sur notre plateform   -->
+      <div class="element_du_formulaire">
+      <label for="status">Quelle genre de compte avez-vous ?</label>
+      <select name="status" id="dropdown">
+        <option id="free" value="free">free</option>
+        <option id="pro" value="payant"> payant </option>
+        <option id="teacher" value="enseignant">enseignant</option>
+        <option id="manage" value="administrateur">administrateur</option>
+      </select>
+      </div>
+      
+      <!--   Boutton radio afin de prendre l'impression global du client     -->
+      <div class="element_du_formulaire">
+      <label>Quelle mention mérite le site selon vous ?</label>
+      <label for="Très Bien">
+        <input id="Très Bien" type="radio" name="satisfaction" value="Très Bien"/> Très Bien
+      </label>
+      <label for="Bien">
+        <input id="Bien" type="radio" name="satisfaction" value="Bien"/> Bien
+      </label>
+      <label for="Assez-Bien">
+        <input id="Assez-Bien" type="radio" name="satisfaction" value="Assez-Bien"/> Assez-Bien
+      </label>
+      <label for="Passable">
+        <input id="Passable" type="radio" name="satisfaction" value="Passable"/> Passable
+      </label>
+      <label for="Médiocre">
+        <input id="Médiocre" type="radio" name="satisfaction" value="Médiocre"/> Médiocre
+      </label>
+      </div>
+      
+      <!--   Emmener le  client à nous indiquer quelles sont les activités qui sont la cause de l'appréciation faite plus haut   -->
+      <div class="element_du_formulaire">
+      <label>Choisissez les activités qui sont à la base de votre appréciation</label>
+      <label for="Conception visuelle" >
+        <input id="Conception visuelle" type="checkbox" name="activité" value="Apprendre à apprendre"/> Apprendre à apprendre
+      </label>
+      <label for="" >
+        <input id="" type="checkbox" name="activité" value="Caligraphie"/> Caligraphie
+      </label>
+      <label for="" >
+        <input id="" type="checkbox" name="activité" value="Conception visuelle"/> Conception visuelle
+      </label>
+      <label for="" >
+        <input id="" type="checkbox" name="activité" value="Couture"/> Couture
+      </label>
+      <label for="" >
+        <input id="" type="checkbox" name="activité" value="Mode"/> Mode
+      </label>
+      <label for="" >
+        <input id="" type="checkbox" name="activité" value="Montage de projet"/> Montage de projet
+      </label>
+      <label for="" >
+        <input id="" type="checkbox" name="activité" value="Peinture"/> Peinture
+      </label>
+      <label for="" >
+        <input id="" type="checkbox" name="activité" value="Plomberie"/> Plomberie
+      </label>
+      <label for="" >
+        <input id="" type="checkbox" name="activité" value="Rédaction scientifique"/> Rédaction scientifique
+      </label>
+      <label for="" >
+        <input id="" type="checkbox" name="activité" value="Rythmique"/> Rythmique
+      </label>
+      </div>
+      
+      <!--   Zone pour des commentaires supplémentaires     -->
+      <div class="element_du_formulaire">
+      <label for="commentaire">Pourvez-vous nous dire en quelque ligne, selon-vous comment pouvons-nous nous améliorer ?</label>
+      <textarea id="commentaire" name="commentaire" rows="10" cols="50" >
+      </textarea>
+      </div>
+      
+      <div id="conteneur_de_submit" class="element_du_formulaire">
+      <button type="submit" id="submit">
+        Envoyer
+      </button>
+      </div>
+    </form>   
+    </div>
+    <div class="décoratif">
+      
+    </div>
+  </body>
+</html>
